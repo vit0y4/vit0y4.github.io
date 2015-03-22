@@ -32,7 +32,7 @@ function fillObjectArray()
 	var fondo2 = document.getElementById("fondo2");
 	var fondo2x = 0;
 	var fondo2y = 0;
-	var fondo2factor = 0.15;
+	var fondo2factor = 0.02;
 	var fondo2Array = new Array();
 	fondo2Array.push(fondo2, fondo2x, fondo2y, fondo2factor);
 	objectArray.push(fondo2Array);
@@ -41,7 +41,7 @@ function fillObjectArray()
 	var fondo3 = document.getElementById("fondo3");
 	var fondo3x = 0;
 	var fondo3y = 0;
-	var fondo3factor = -0.05;
+	var fondo3factor = -0.01;
 	var fondo3Array = new Array();
 	fondo3Array.push(fondo3, fondo3x, fondo3y, fondo3factor);
 	objectArray.push(fondo3Array);
