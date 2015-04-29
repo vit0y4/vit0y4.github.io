@@ -1,29 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Vit0y4's main page</title>
-	<link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/header.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="images/wonder-woman-black.png">
+	<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+	<title>Vitoya Home Page</title>
+	<link href='http://fonts.googleapis.com/css?family=Marcellus+SC|Marcellus' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="img/icon.png">
+
 </head>
 <body>
-    <div id="header">        
-        <div id="fondo1"></div>    
-        <div id="fondo2"></div>        
-        <div id="fondo3"></div>      
-        <script type="text/javascript" src="script/header.js"></script>
-        <ul class="bmenu">
-            <li><a href="http://vit0y4.blogspot.com/" target="_blank">Vit0y4's Blog</a></li>
-            <li><a href="https://twitter.com/vit0y4" target="_blank">Twitter</a></li>
-            <li><a href="https://www.facebook.com/vit0y4Blog" target="_blank">Facebook</a></li>
-            <li><a href="https://github.com/vit0y4" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/vickyperezvitoya" target="_blank">LinkedIn</a></li>
-            <li><a href="https://plus.google.com/+VickyPerezVit0y4" target="_blank">Google +</a></li>
-            <li><a href="http://vit0y4.tumblr.com/" target="_blank">Tumblr</a></li>
-        </ul>
-    </div> 
-    <div class="footer">Parque Nicolás de Federmán (Riohacha, La Guajira) - @Vit0y4 - 2015</div>
-    
+	<header class="header-background">
+		<nav class="nav">
+			<ul class="menu">
+				<li class="itemMenu"><a href="#header" class="itemMenu-block">Home</a></li>
+				<li class="itemMenu"><a href="#web" class="itemMenu-block">Web</a></li>
+				<li class="itemMenu"><a href="#marketing" class="itemMenu-block">Marketing</a></li>
+				<li class="itemMenu"><a href="#security" class="itemMenu-block">Security</a></li>
+			</ul>
+		</nav>
+		<section id="header" class="header">
+			<ul class="socialIcons">
+	            <li class="socialIcons--items"><a href="http://vit0y4.blogspot.com/" target="_blank"><img src="img/icons/blggr.png" class="socialIcons--img"></a></li>
+	            <li class="socialIcons--items"><a href="https://twitter.com/vit0y4" target="_blank"><img src="img/icons/tw.png" class="socialIcons--img" ></a></li>
+	            <li class="socialIcons--items"><a href="https://www.facebook.com/vit0y4Blog" target="_blank"><img src="img/icons/fb.png" class="socialIcons--img"></a></li>
+	            <li class="socialIcons--items"><a href="https://github.com/vit0y4" target="_blank"><img src="img/icons/github.png" class="socialIcons--img"></a></li>
+	            <li class="socialIcons--items"><a href="https://www.linkedin.com/in/vickyperezvitoya" target="_blank"><img src="img/icons/lnkdn.png" class="socialIcons--img"></a></li>
+	            <li class="socialIcons--items"><a href="https://www.youtube.com/channel/UCluxQ6OZJ7Zgb3fO-IR7scg" target="_blank"><img src="img/icons/yt.png" class="socialIcons--img"></a></li>
+	            <li class="socialIcons--items"><a href="https://plus.google.com/+VickyPerezVit0y4" target="_blank"><img src="img/icons/gplus.png" class="socialIcons--img"></a></li>
+	            <li class="socialIcons--items"><a href="http://vit0y4.tumblr.com/" target="_blank"><img src="img/icons/tmblr.png" class="socialIcons--img"></a></li>
+	        </ul>		
+		</section>
+	</header>
+	<main class="content">
+		<section id="web" class="web">
+			<img class="web-img" src="img/webdesign.png" alt="Web">
+			<div class="web-texto">
+				<h2 class="titulo">Web</h2>
+				¿Quiere tener una pagina web propia para usted o para su negocio pero no sabe por donde comenzar? HTML5 + CSS3, javascript, JQuery, Wordpress, Blogger. <br />
+				¿Tiene en mente una idea de aplicación web/móvil que solucionaría los problemas de su empresa o de su comunidad pero no sabe programar o necesita ayuda? Ruby y RubyOnRails, API Rest, io.js.
+			</div>
+		</section>
+		<section id="marketing" class="marketing">
+			<div class="marketing-texto">
+			<h2 class="titulo">Marketing y Estrategia Digital</h2>
+				¿Quiere dar a conocer su negocio a través de Internet pero no tiene ideas de como hacerlo? ¿Cuanto cree que cuesta propmocionarse en redes sociales? Desarrollo de estrategía digital y marketing online, outbound e inbound.
+				
+			</div>
+			<img class="marketing-img" src="img/marketing.png" alt="">
+		</section>
+		<section id="security" class="security">
+			<img class="sec-img" src="img/security.png" alt="">
+			<div class="sec-texto">
+			<h2 class="titulo">Seguridad de la información</h2>
+				¿Ha sufrido por algún problema de seguridad de información en su empresa u hogar? ¿El antivirus que está usando es el mejor? ¿Quiere prevenir que alguno de sus empleados pueda vender información confidencial? Implementación de la Norma ISO 27001 (Seguridad de la información), Test de penetración, Analisis de Riesgos.			
+			</div>
+		</section> 
+		<section id="contacto" class="contacto">
+			<h2 class="titulo">¿Contacto?</h2>
+			<div class="contacto-text links">
+				Si crees que puedo ayudarte, envíame un correo electrónico a <a href="mailto:vit0y4@gmail.com" target="_top">vit0y4[at]gmail.com</a>. También me puedes contactar a través de mis redes sociales o al teléfono: <strong>314 - 6485692</strong>.
+			</div>
+		</section>
+	</main>
+	<footer class="footer links">
+		Power by <a href="http://twitter.com/vit0y4">@vit0y4</a> 2015.
+	</footer>
 </body>
 </html>
