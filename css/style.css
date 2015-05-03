@@ -62,16 +62,19 @@
 	height: 60px;
 }
 .web{
-	background-color: #E5D8FF;
+	background-color: rgb(141, 142, 141);
 	padding-top: 5em;
+	color: white;
 }
 .marketing{
-	background-color: #3C48E8;
+	background-color: rgb(255, 234, 128);
 	padding-top: 5em;
+	color: rgb(19, 17, 13);
 }
 .security{
-	background-color: #DEFF84;
+	background-color: rgb(241, 177, 97);
 	padding-top: 5em;
+	color: rgb(19, 17, 13);
 }
 .title{
 	font-family: 'Marcellus SC', serif;
@@ -98,9 +101,7 @@
 	padding: 2em 0;
 	text-align: justify;
 }
-
 .text--marketing{
-	color: white;
 	font-size: 1.2em;
 	padding: 2em 0 2em 1em;
 	text-align: justify;
@@ -124,7 +125,7 @@
 	width: 10%;
 }
 .links {
-	color: white;
+	color: rgb(75, 110, 141);
 	text-decoration: none;
 }
 .links:visited{
@@ -134,8 +135,8 @@
 	text-decoration: underline;
 }
 .footer{
-	background-color: #FF4D5E;
-	color: white;
+	background-color: rgb(208, 199, 189);
+	color: rgb(209, 108, 11);
 	font-family: 'Marcellus', serif;
 	padding: 2em;
 	text-align: center;
