@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header class="header">
-		<nav>
+		<nav id="menu">
 			<ul class="menu">
 				<li class="menu--item"><a href="#home" class="menu--item--block">Home</a></li>
 				<li class="menu--item"><a href="#web" class="menu--item--block">Web</a></li>
@@ -61,12 +61,96 @@
 			<img src="img/avatar.jpg" alt="" class="contact--image">
 			<div class="text  text--contact">
 			<h2 class="title">¿Contacto?</h2>
-				Soy M. Victoria Perez y si crees que puedo ayudarte no dudes en contactarme, envíame un correo electrónico a <a class="links" href="mailto:vit0y4@gmail.com" target="_top">vit0y4[at]gmail.com</a>. También me puedes contactar a través de mis redes sociales o al teléfono: <strong>314 - 6485692</strong>.
+				Soy M. Victoria Perez y si crees que puedo ayudarte no dudes en 
+				<div class="boton" onclick="showhidenform()">
+					contactarme!
+				</div>
 			</div>
 		</section>
+		<div class="form" id="form">
+			<iframe src="https://docs.google.com/forms/d/1MJJ2gzAkTUqIizgVdNK06GfIQ6H_rsJoed7UzKdeIPc/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
+		</div>
 	</main>
 	<footer class="footer">
 		Powered by <a class="links" href="http://twitter.com/vit0y4">@vit0y4</a> 2015.
 	</footer>
+		<span class="ir-arriba icon-chevron-up"></span>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		var clic = 1;
+		function showhidenform(){ 
+		   if(clic==1){
+		   document.getElementById('form').style.display='block';
+		   document.location.hash="#form";
+		   clic = clic + 1;
+		   } else{
+		       document.getElementById('form').style.display='none'; 
+		       document.location.hash="#contacto";
+		    clic = 1;
+		   }   
+		}
+	</script>
+	<script type="text/javascript">
+	$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#menu a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#menu ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+	</script>
+
+<script>
+	$(document).ready(function(){
+ 
+	$('.ir-arriba').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 300);
+	});
+ 
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 0 ){
+			$('.ir-arriba').slideDown(300);
+		} else {
+			$('.ir-arriba').slideUp(300);
+		}
+	});
+ 
+});
+</script>
+
 </body>
 </html>
