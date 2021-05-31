@@ -1,6 +1,7 @@
 .header{
-	background-image: url(../img/header.jpg);
-	background-position: center;
+	background-image: url(../img/victoria2.png);
+	background-color: #335384;
+	background-position: right;
 	background-repeat: no-repeat;
 	background-size: cover;
 	-moz-background-size: cover;
@@ -42,28 +43,33 @@
 .active{
 	background-color: rgba(0, 0, 0, .5);
 }
-.socialicons{
+.name {
+	color: white;
+	font-family: 'Marcellus SC', serif;
+	font-size: 2em;
+	padding: 1em 0;
+	font-weight: bold;
+}
+.socialicons {
 	margin: 0;
 	padding: 0;
 	position: relative;
-	text-align: center;
+	
 }
 .socialicons--items{
 	display: inline;
 	vertical-align: middle;
 }
-.socialicons--img{
-	height: 50px;
-	padding: 1em;
-	-webkit-filter: drop-shadow(0px 0px 15px rgba(0,0,0,.8));
-    -moz-filter: drop-shadow(0px 0px 15px rgba(0,0,0,.8));
-    -ms-filter: drop-shadow(0px 0px 15px rgba(0,0,0,.8));
-    -o-filter: drop-shadow(0px 0px 15px rgba(0,0,0,.8));
-    filter: drop-shadow(0px 0px 15px rgba(0,0,0,.8));
-    transition: all 0.5s ease;
+.socialicons--img {
+	height: 15px;
+	border-radius: .5em;
+	background-color: #ffffff36;
+	padding: .5em;
+	-webkit-filter: invert(100%);
+	-webkit-transition: all 0.3s;
 }
-.socialicons--img:hover{
-	height: 60px;
+.socialicons--img:hover {
+	-webkit-filter: none;
 }
 .web{
 	background-color: rgb(241, 177, 97);
