@@ -87,40 +87,60 @@ body {
 	border-radius: .5em;
 }
 .projects, .about {
-	padding: 5em;
+	padding: 2.5em;
 }
-.contact{
-	padding: 2em;
+.projects {
+	border-top: 8px solid #ffffff36;
 }
+.projects article {
+	border-bottom: 1px solid #ffffff;
+	padding: 2em 0;
+}
+	.projects article:nth-last-of-type(1){
+		border-bottom:none;
+	}
+	.contact {
+		padding: 2em;
+	}
 
 h2{
 	font-size: 2em;
 	text-decoration: underline;
 }
-.title{
+.title {
 	font-family: 'Marcellus SC', serif;
 	margin: 0;
 	padding: 1em .5em;
 	text-align: center;
 	letter-spacing: 0.1em;
 }
-.image{
+.image {
 	display: inline-block;
 	padding: 1em 2em;
 	text-align: center;
 	vertical-align: middle;
-	width: 40%;
+	width: 25%;
+	border-radius: 10%;
 }
+	.image:hover {
+		-webkit-transform: rotate(2deg);
+		transform: rotate(2deg);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+		filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+	}
 .text{
 	display: inline-block;
 	font-family: 'Marcellus', serif;
 	vertical-align: top;
-	width: 48%;
+	width: 65%;
 }
+.text:nth-child(odd){
+	text-align:right;
+}
+
 .text--projects, .text--contact, .text--about{
 	font-size: 1.2em;
-	padding: 2em 0;
-	text-align: justify;
 }
 .text--about {
 	padding-left: 2em;
@@ -146,6 +166,59 @@ h2{
 	padding: 2em;
 	text-align: center;
 }
+
+/*Tags*/
+.tags {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+.tag {
+	background: #eee;
+	border-radius: 5px;
+	display: inline-block;
+	height: 26px;
+	color: #000;
+	line-height: 26px;
+	padding: 0 20px 0 23px;
+	position: relative;
+	margin: 0 10px 10px 0;
+	text-decoration: none;
+	-webkit-transition: color 0.2s;
+	cursor: pointer;
+	
+}
+
+	.tag::before {
+		background: #fff;
+		border-radius: 10px;
+		box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+		content: '';
+		height: 6px;
+		left: 10px;
+		position: absolute;
+		width: 6px;
+		top: 10px;
+	}
+
+	/*.tag::after {
+		background: #fff;
+		border-bottom: 13px solid transparent;
+		border-left: 10px solid #eee;
+		border-top: 13px solid transparent;
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+	}*/
+
+	.tag:hover {
+		background-color: #ffffff36;
+		color: white;
+	}
+
+
 
 /*
 Botón de subir
