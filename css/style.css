@@ -139,6 +139,9 @@ h2{
 .text:nth-child(odd){
 	text-align:right;
 }
+.text p a{
+	color: #fff;
+}
 
 .text--projects, .text--contact, .text--about{
 	font-size: 1.2em;
