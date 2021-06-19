@@ -97,12 +97,12 @@ body {
 	border-bottom: 1px solid #ffffff;
 	padding: 2em 0;
 }
-	.projects article:nth-last-of-type(1){
-		border-bottom:none;
-	}
-	.contact {
-		padding: 2em;
-	}
+.projects article:nth-last-of-type(1){
+	border-bottom:none;
+}
+.contact {
+	padding: 2em;
+}
 
 h2{
 	font-size: 2em;
@@ -123,14 +123,28 @@ h2{
 	width: 25%;
 	border-radius: 10%;
 }
-	.image:hover {
-		-webkit-transform: rotate(2deg);
-		transform: rotate(2deg);
-		-webkit-transition: .3s ease-in-out;
-		transition: .3s ease-in-out;
-		filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
-	}
-.text{
+.image:hover {
+	-webkit-transform: rotate(2deg);
+	transform: rotate(2deg);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+.imgAbout {
+	display: inline-block;
+	padding: 0em 5em;
+	text-align: center;
+	vertical-align: middle;
+	
+}
+.imgAbout:hover {
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-deg);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+.text {
 	display: inline-block;
 	font-family: 'Marcellus', serif;
 	vertical-align: top;
@@ -194,33 +208,24 @@ h2{
 	
 }
 
-	.tag::before {
-		background: #fff;
-		border-radius: 10px;
-		box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-		content: '';
-		height: 6px;
-		left: 10px;
-		position: absolute;
-		width: 6px;
-		top: 10px;
-	}
+.tag::before {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+	content: '';
+	height: 6px;
+	left: 10px;
+	position: absolute;
+	width: 6px;
+	top: 10px;
+}
 
-	/*.tag::after {
-		background: #fff;
-		border-bottom: 13px solid transparent;
-		border-left: 10px solid #eee;
-		border-top: 13px solid transparent;
-		content: '';
-		position: absolute;
-		right: 0;
-		top: 0;
-	}*/
+	
 
-	.tag:hover {
-		background-color: #ffffff36;
-		color: white;
-	}
+.tag:hover {
+	background-color: #ffffff36;
+	color: white;
+}
 
 
 
@@ -272,23 +277,26 @@ Botón de subir
 
 @media screen and (max-width:768px){
 	.menu--item--block{
-		font-size: 1em;
+		font-size: .9em;
 	}
 	.socialicons--img{
-		height: 30px;
-		padding: .8em;
+		/*height: 30px;
+		padding: .8em;*/
 	}
-	.web, .marketing, .security{
+	.projects{
 		padding-top: 2.5em;
 		text-align: center;
 	}
-	.image{
+	.image, .imgAbout{
 		display: none;
 	}
-	.text--web, .text--security, .text--marketing, .text--contact{
+	.text--projects, .text--contact{
 		font-size: 1em;
 		padding: 0 1em 1em 1em;
 		width: 70%;
+	}
+	.text:nth-child(odd) {
+		text-align: unset;
 	}
 	.contact{
 		padding: 0 15% 2em;
